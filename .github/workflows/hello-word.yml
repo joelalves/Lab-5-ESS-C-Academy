@@ -1,7 +1,9 @@
 name: Hello world
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/2 * * * *'
+  # Allow manual trigger for testing
+  workflow_dispatch:
 jobs:
   hello-world-job:
     # The type of runner that the job will run on
