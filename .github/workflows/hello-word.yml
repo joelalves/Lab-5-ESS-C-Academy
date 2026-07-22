@@ -1,7 +1,7 @@
 name: Hello world
 on:
   schedule:
-    - cron: '*/10* * * *'
+    - cron: '*/10 * * * *'
   # Allow manual trigger for testing
   workflow_dispatch:
 jobs:
@@ -11,7 +11,7 @@ jobs:
     # Sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out the repository
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       # Runs a single command using the runner shell
       - name: Run a one-line script
         run: echo "Hello world!"
