@@ -1,5 +1,5 @@
 name: Hello world
-on: TODO
+on: workflow_dispatch
 jobs:
   # the id of the name
   hello-world-job:
@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v3
     # Runs a single command using the runner shell
     - name: Run a one-line script
-      run: TODO
+      run: echo "Hello world!"
